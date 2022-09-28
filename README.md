@@ -84,3 +84,11 @@ Options:
   -n, --n-result INTEGER  N rows to show.
   --help                  Show this message and exit.
 ```
+
+# Installation
+
+You can easily start using the CLI by just installing the `requirements.txt` file by following the command below.
+
+```
+pip install -r requirements.txt
+```
