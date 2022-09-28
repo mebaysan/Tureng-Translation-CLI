@@ -1,9 +1,8 @@
 import click
 import requests
 from bs4 import BeautifulSoup
-from utilities.constants import CRACKER_HEADER
-from utilities.helpers import get_turkish_translate_url
-
+from tureng_cli.utilities.constants import CRACKER_HEADER
+from tureng_cli.utilities.helpers import get_turkish_translate_url
 
 @click.command()
 @click.option(

@@ -1,8 +1,28 @@
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Help about parameters](#help-about-parameters)
+
 # Introduction
 
 I created this repo to easily translate English and Turkish words by using very good project, [Tureng](https://tureng.com/en/turkish-english).
 
 This CLI basically scrapes [https://tureng.com/en/turkish-english](https://tureng.com/en/turkish-english) link to parse translation results. You can just pass the word as a parameter to translate. 
+
+
+# Installation
+
+You can easily start using the CLI by installing it as a package on your Python environment.
+
+```
+pip install .
+```
+
+Or you can install it by using the command below
+
+```
+pip install git+https://github.com/BaysanSoft/Tureng-Translation-CLI.git
+```
 
 # Usage
 
@@ -13,7 +33,7 @@ There are basically 2 parameters by using the CLI:
 The example below is for Turkish -> English.
 
 ```
->>> python cli.py translate -w Kasırga -n 10
+>>> python -m tureng_cli translate -w Kasırga -n 10
 
 Meanings of "kasırga" in English Turkish Dictionary : 33 result(s)
 #       Category        Turkish         English
@@ -33,7 +53,7 @@ Meanings of "kasırga" in English Turkish Dictionary : 33 result(s)
 
 The example below is for English -> Turkish.
 ```
->>> python cli.py translate -w Hurricane -n 10
+>>> python -m tureng_cli translate -w Hurricane -n 10
 
 Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 #       Category        English         Turkish
@@ -55,7 +75,7 @@ Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 You can use `--help` flag to get help.
 
 ```
->>> python cli.py --help
+>>> python -m tureng_cli --help
 
 Usage: cli.py [OPTIONS] COMMAND [ARGS]...
 
@@ -70,7 +90,7 @@ Or you can get help for specific commands.
 
 
 ```
->>> python cli.py translate --help
+>>> python -m tureng_cli translate --help
 
 Usage: cli.py translate [OPTIONS]
 
@@ -83,12 +103,4 @@ Options:
   -w, --word TEXT         A word to translate from Turkish.
   -n, --n-result INTEGER  N rows to show.
   --help                  Show this message and exit.
-```
-
-# Installation
-
-You can easily start using the CLI by just installing the `requirements.txt` file by following the command below.
-
-```
-pip install -r requirements.txt
 ```
