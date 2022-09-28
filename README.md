@@ -1,5 +1,6 @@
 - [Introduction](#introduction)
 - [Installation](#installation)
+  - [Install As a Bash Script](#install-as-a-bash-script)
 - [Usage](#usage)
   - [Help about parameters](#help-about-parameters)
 
@@ -22,6 +23,33 @@ Or you can install it by using the command below
 
 ```
 pip install git+https://github.com/BaysanSoft/Tureng-Translation-CLI.git
+```
+
+## Install As a Bash Script
+
+If you want to use it from bash, you can just move [tureng-cli.sh](tureng-cli.sh) to `/usr/sbin/`.
+
+```
+>>> sudo mv tureng-cli.sh /usr/sbin/
+>>> turenh-cli.sh "Business Intelligence"
+
+Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
+#       Category        English         Turkish
+1       + Common Usage  + hurricane     + kasırga
+2       + General       + hurricane     + fırtına
+3       + General       + hurricane     + urağan
+4       + General       + hurricane     + kasırga
+5       + General       + hurricane     + (güç veya hız bakımından) kasırgaya benzeyen şey
+6       + Technical     + hurricane     + bora
+7       + Technical     + hurricane     + kasırga
+8       + Environment   + hurricane     + tropik siklon
+9       + Geography     + hurricane     + kasırga
+10      + Geography     + hurricane     + batı virginia eyaletinde şehir
+11      + Geography     + hurricane     + utah eyaletinde şehir
+12      + Meteorology   + hurricane     + bora
+13      + Meteorology   + hurricane     + hortum
+14      + Meteorology   + hurricane     + kasırga
+15      + Military      + hurricane     + ikinci dünya savaşı'nda ingilizler tarafından kullanılan bir savaş uçağı
 ```
 
 # Usage
