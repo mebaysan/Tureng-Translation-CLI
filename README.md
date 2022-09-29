@@ -33,7 +33,7 @@ If you want to use it from bash, you can just move [tureng-cli.sh](tureng-cli.sh
 
 ```
 >>> sudo mv tureng-cli.sh /usr/sbin/
->>> turenh-cli.sh "Business Intelligence"
+>>> turenh-cli.sh "hurricane"
 
 Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 #       Category        English         Turkish
