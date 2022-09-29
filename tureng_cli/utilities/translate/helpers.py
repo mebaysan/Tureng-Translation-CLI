@@ -49,6 +49,6 @@ def extract_translate_table_rows(soup):
 
 
 def check_is_there_translation_result(soup):
-    # get header text
+    # get tables to check is there a result table
     result = soup.find_all("table", class_="searchResultsTable")
     return True if len(result) >= 1 else False
