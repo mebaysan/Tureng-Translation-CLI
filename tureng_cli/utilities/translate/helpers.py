@@ -59,3 +59,11 @@ def extract_translate_no_translation_header_text(soup):
     header = soup.find("h1")
     header_text = "".join([i for i in header.strings])
     return header_text
+
+
+def extract_translate_no_translation_possible_words(soup):
+    # get possible list
+    possible_list = soup.find("ul", {"class": "suggestion-list"})
+    possible_words = possible_list.find_all('a')
+    possible_words_list = "\n".join([word.string for word in possible_words])
+    return possible_words_list
