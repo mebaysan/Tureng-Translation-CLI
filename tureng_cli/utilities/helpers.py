@@ -8,3 +8,4 @@ def bind_commands_to_cli(cli, *args, **kwargs):
 
 def get_turkish_translate_url(word):
     return BASE_URL_TR + word
+
