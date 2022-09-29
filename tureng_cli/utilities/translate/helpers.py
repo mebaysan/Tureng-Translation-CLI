@@ -52,3 +52,10 @@ def check_is_there_translation_result(soup):
     # get tables to check is there a result table
     result = soup.find_all("table", class_="searchResultsTable")
     return True if len(result) >= 1 else False
+
+
+def extract_translate_no_translation_header_text(soup):
+    # get header text
+    header = soup.find("h1")
+    header_text = "".join([i for i in header.strings])
+    return header_text

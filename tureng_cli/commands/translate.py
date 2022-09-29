@@ -7,7 +7,8 @@ from tureng_cli.utilities.translate.helpers import (
     extract_translate_header_text,
     extract_translate_table_headers,
     extract_translate_table_rows,
-    check_is_there_translation_result
+    check_is_there_translation_result,
+    extract_translate_no_translation_header_text
 )
 
 
@@ -38,4 +39,6 @@ def translate(word, n_result):
         click.echo(table_header_text)
         click.echo("\n".join(table_rows_texts[:n_result]))
     else:
-        click.echo(f'There is no translation for this word: {word}')
+        header_text = extract_translate_no_translation_header_text(soup)
+        click.echo(header_text)
+
