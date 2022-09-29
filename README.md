@@ -106,7 +106,17 @@ Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 ```
 >>> python -m tureng_cli translate -w "excissment" -n 10
 
-There is no translation for this word: excissment
+Maybe the correct one is
+excitement
+exciseman
+excipient
+excise
+excised
+excipients
+excising
+excimer
+excision
+excitant
 ```
 
 ## Help about parameters
