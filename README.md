@@ -2,6 +2,7 @@
 - [Installation](#installation)
   - [Install As a Bash Script](#install-as-a-bash-script)
 - [Usage](#usage)
+  - [Error Handling](#error-handling)
   - [Help about parameters](#help-about-parameters)
 
 # Introduction
@@ -98,6 +99,14 @@ Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 9       + Geography     + hurricane     + kasırga
 10      + Geography     + hurricane     + batı virginia eyaletinde şehir
 
+```
+
+## Error Handling
+
+```
+>>> python -m tureng_cli translate -w "excissment" -n 10
+
+There is no translation for this word: excissment
 ```
 
 ## Help about parameters
