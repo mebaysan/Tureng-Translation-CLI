@@ -2,6 +2,8 @@
 - [Installation](#installation)
   - [Install As a Bash Script](#install-as-a-bash-script)
 - [Usage](#usage)
+  - [translate](#translate)
+  - [sentence](#sentence)
   - [Error Handling](#error-handling)
   - [Help about parameters](#help-about-parameters)
 
@@ -32,6 +34,8 @@ Or you can just use `sudo make install`.
 
 If you want to use it from bash, you can just move [tureng-cli.sh](tureng-cli.sh) to `/usr/sbin/`.
 
+**!With this kind of installation, you can use `translate` command for default.**
+
 ```
 >>> sudo mv tureng-cli.sh /usr/sbin/
 >>> turenh-cli.sh "hurricane"
@@ -56,6 +60,10 @@ Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 ```
 
 # Usage
+
+## translate
+
+This command is using for translating words.
 
 There are basically 2 parameters by using the CLI:
 - `-w` or `--word` for words to translate in both language Turkish or English
@@ -98,6 +106,34 @@ Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 8       + Environment   + hurricane     + tropik siklon
 9       + Geography     + hurricane     + kasırga
 10      + Geography     + hurricane     + batı virginia eyaletinde şehir
+
+```
+
+## sentence
+
+This command is using for showing sentence examples.
+
+There are basically 2 parameters by using the CLI:
+- `-w` or `--word` for words to translate in both language Turkish or English
+- `-n` or `--n-results` to limit the result of the translation rows
+
+The example below is for Turkish -> English.
+
+```
+>>> python -m tureng_cli sentence -w "Hurricane" -n 10
+
+Hurricane sentence example
+#       Sentence
+1       + Oh, and the tropical storm will become a hurricane late Saturday night.
+2       + The town was considerably damaged by the great hurricane of the 8th of August 1899.
+3       + He'd managed to miss the hurricane, though the waters were still rough and the waves high.
+4       + Everything needs to be ready, especially if the hurricane shifts to make landfall.
+5       + In 1907 a hurricane destroyed the greater part of the laurels of the Prado and the royal palms of the Parque de Colon.
+6       + He felt like he'd been hit by a hurricane.
+7       + In 1090 a tremendous hurricane passed over London, and blew down six hundred houses and many churches.
+8       + An open space forming the heart of the square in which the church stands separates the solitary western tower (14th century) from the choir and transept, the nave having been blown down by a violent hurricane in 1674 and never rebuilt.
+9       + In July, on the approach of the dangerous hurricane season, Rodney sailed for North America, reaching New York on the 14th of September.
+10      + The hurricane, too, was followed by repeated droughts, and the inhabitants of the out-islands were reduced to indigence and want, a condition which is still, in some measure, in evidence.
 
 ```
 
