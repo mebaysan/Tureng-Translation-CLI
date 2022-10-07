@@ -4,7 +4,7 @@ setup(
     author="@mebaysan",
     description="https://tureng.com/en/turkish-english CLI for translation",
     name="tureng-cli",
-    version="0.4.0",
+    version="1.0.0",
     packages=find_packages(include=["tureng_cli", "tureng_cli.*"]),
     install_requires=["beautifulsoup4", "click", "requests"],
     python_requires=">=3.8",
