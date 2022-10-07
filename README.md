@@ -117,8 +117,6 @@ There are basically 2 parameters by using the CLI:
 - `-w` or `--word` for words to translate in both language Turkish or English
 - `-n` or `--n-results` to limit the result of the translation rows
 
-The example below is for Turkish -> English.
-
 ```
 >>> python -m tureng_cli sentence -w "Hurricane" -n 10
 
