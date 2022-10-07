@@ -4,6 +4,7 @@
 - [Usage](#usage)
   - [translate](#translate)
   - [sentence](#sentence)
+  - [synonym](#synonym)
   - [Error Handling](#error-handling)
   - [Help about parameters](#help-about-parameters)
 
@@ -114,7 +115,7 @@ Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 This command is using for showing sentence examples.
 
 There are basically 2 parameters by using the CLI:
-- `-w` or `--word` for words to translate in both language Turkish or English
+- `-w` or `--word` for words to get the related sentences with it
 - `-n` or `--n-results` to limit the result of the translation rows
 
 ```
@@ -132,6 +133,26 @@ Hurricane sentence example
 8       + An open space forming the heart of the square in which the church stands separates the solitary western tower (14th century) from the choir and transept, the nave having been blown down by a violent hurricane in 1674 and never rebuilt.
 9       + In July, on the approach of the dangerous hurricane season, Rodney sailed for North America, reaching New York on the 14th of September.
 10      + The hurricane, too, was followed by repeated droughts, and the inhabitants of the out-islands were reduced to indigence and want, a condition which is still, in some measure, in evidence.
+
+```
+
+
+## synonym
+
+This command is using for showing synonyms of the word.
+
+There are basically 2 parameters by using the CLI:
+- `-w` or `--word` for words to get related synonyms
+- `-n` or `--n-results` to limit the result of the translation rows
+
+```
+>>> python -m tureng_cli synonym -w "Hurricane" -n 3
+
+Hurricane synonyms
+#       Synonym         Defination
+1       + cyclone       +  (Meteorol.) A system of rotating winds over a vast area, spinning inward to a low pressure center (counterclockwise in the N Hemisphere) and generally causing stormy weather: commonly called a low, since it coexists with low barometric pressure
+2       + typhoon       +  A violent cyclonic storm occurring in the western Pacific Ocean.
+3       + wind          +  The wind instruments of an orchestra, or the players of these instruments
 
 ```
 
