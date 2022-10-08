@@ -1,6 +1,7 @@
 - [Introduction](#introduction)
 - [Installation](#installation)
   - [Install As a Bash Script](#install-as-a-bash-script)
+    - [Commands as Bash script](#commands-as-bash-script)
 - [Usage](#usage)
   - [translate](#translate)
   - [sentence](#sentence)
@@ -59,6 +60,30 @@ Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 14      + Meteorology   + hurricane     + kasırga
 15      + Military      + hurricane     + ikinci dünya savaşı'nda ingilizler tarafından kullanılan bir savaş uçağı
 ```
+
+### Commands as Bash script
+
+[tureng-cli.sh](tureng-cli.sh) file helps us to execute commands from Bash.
+
+Syntax: 
+
+`tureng-cli.sh {command} "{word}" {n_result: default 15}`
+
+Example of usage:
+
+`tureng-cli.sh synonym "hurricane" 15`
+
+```
+>>> sudo mv tureng-cli.sh /usr/sbin/
+>>> turenh-cli.sh synonym "hurricane" 2
+
+Hurricane synonyms
+#       Synonym         Defination
+1       + cyclone       +  (Meteorol.) A system of rotating winds over a vast area, spinning inward to a low pressure center (counterclockwise in the N Hemisphere) and generally causing stormy weather: commonly called a low, since it coexists with low barometric pressure
+2       + typhoon       +  A violent cyclonic storm occurring in the western Pacific Ocean.
+
+```
+
 
 # Usage
 
