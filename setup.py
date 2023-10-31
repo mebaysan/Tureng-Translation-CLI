@@ -17,5 +17,5 @@ setup(
     keywords="mebaysan translation Turkish English Tureng CLI",
     zip_safe=False,
     license="MIT",
-    entry_points={"console_scripts": ["tureng=tureng_cli.__main__:main"]},
+    entry_points={"console_scripts": ["tureng-cli=tureng_cli.__main__:main"]},
 )
