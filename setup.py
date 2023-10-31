@@ -9,8 +9,8 @@ README = (HERE / "README.md").read_text()
 setup(
     author="@mebaysan",
     author_email="mail@mebaysan.com",
-    description="https://tureng.com/en/turkish-english CLI for translation",
-    name="tureng-cli",
+    description="BaysanSoft Tureng CLI for EN-TR translation",
+    name="bs-tureng-cli",
     URL="https://github.com/mebaysan/Tureng-Translation-CLI",
     version="1.0.0",
     long_description_content_type="text/markdown",
