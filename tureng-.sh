@@ -8,7 +8,7 @@ fi
 
 
 if [[ $1 != "translate" && $1 != "sentence" && $1 != "synonym" ]]; then
-	tureng translate  -w "$1" -n $N_RESULT
+	tureng-cli translate  -w "$1" -n $N_RESULT
 else
-	tureng $1 -w "$2" -n $N_RESULT
+	tureng-cli $1 -w "$2" -n $N_RESULT
 fi

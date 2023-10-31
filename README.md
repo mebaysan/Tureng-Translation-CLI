@@ -63,19 +63,19 @@ Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 
 ### Commands as Bash script
 
-[tureng-cli.sh](tureng-cli.sh) file helps us to execute commands from Bash.
+[tureng.sh](tureng.sh) file helps us to execute commands from Bash.
 
 Syntax: 
 
-`tureng-cli.sh {command} "{word}" {n_result: default 15}`
+`tureng.sh {command} "{word}" {n_result: default 15}`
 
 Example of usage:
 
-`tureng-cli.sh synonym "hurricane" 15`
+`tureng.sh synonym "hurricane" 15`
 
 ```
->>> sudo mv tureng-cli.sh /usr/sbin/
->>> turenh-cli.sh synonym "hurricane" 2
+>>> sudo mv tureng.sh /usr/sbin/
+>>> tureng.sh synonym "hurricane" 2
 
 Hurricane synonyms
 #       Synonym         Defination
@@ -98,7 +98,7 @@ There are basically 2 parameters by using the CLI:
 The example below is for Turkish -> English.
 
 ```
->>> python -m tureng_cli translate -w Kasırga -n 10
+>>> tureng-cli translate -w Kasırga -n 10
 
 Meanings of "kasırga" in English Turkish Dictionary : 33 result(s)
 #       Category        Turkish         English
@@ -118,7 +118,7 @@ Meanings of "kasırga" in English Turkish Dictionary : 33 result(s)
 
 The example below is for English -> Turkish.
 ```
->>> python -m tureng_cli translate -w Hurricane -n 10
+>>> tureng-cli translate -w Hurricane -n 10
 
 Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 #       Category        English         Turkish
@@ -144,7 +144,7 @@ There are basically 2 parameters by using the CLI:
 - `-n` or `--n-results` to limit the result of the translation rows
 
 ```
->>> python -m tureng_cli sentence -w "Hurricane" -n 10
+>>> tureng-cli sentence -w "Hurricane" -n 10
 
 Hurricane sentence example
 #       Sentence
@@ -171,7 +171,7 @@ There are basically 2 parameters by using the CLI:
 - `-n` or `--n-results` to limit the result of the translation rows
 
 ```
->>> python -m tureng_cli synonym -w "Hurricane" -n 3
+>>> tureng-cli synonym -w "Hurricane" -n 3
 
 Hurricane synonyms
 #       Synonym         Defination
@@ -184,7 +184,7 @@ Hurricane synonyms
 ## Error Handling
 
 ```
->>> python -m tureng_cli translate -w "excissment" -n 10
+>>> tureng-cli translate -w "excissment" -n 10
 
 Maybe the correct one is
 excitement
@@ -204,7 +204,7 @@ excitant
 You can use `--help` flag to get help.
 
 ```
->>> python -m tureng_cli --help
+>>> tureng-cli --help
 
 Usage: cli.py [OPTIONS] COMMAND [ARGS]...
 
@@ -219,7 +219,7 @@ Or you can get help for specific commands.
 
 
 ```
->>> python -m tureng_cli translate --help
+>>> tureng-cli translate --help
 
 Usage: cli.py translate [OPTIONS]
 
