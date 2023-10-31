@@ -13,4 +13,5 @@ if __name__ == "__main__":
     cli.add_command(translate)
     cli.add_command(sentence)
     cli.add_command(synonym)
+    
     cli()
