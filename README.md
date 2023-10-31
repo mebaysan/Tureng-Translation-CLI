@@ -13,20 +13,19 @@
 
 I created this repo to easily translate English and Turkish words by using very good project, [Tureng](https://tureng.com/en/turkish-english).
 
-This CLI basically scrapes [https://tureng.com/en/turkish-english](https://tureng.com/en/turkish-english) link to parse translation results. You can just pass the word as a parameter to translate. 
-
+This CLI basically scrapes [https://tureng.com/en/turkish-english](https://tureng.com/en/turkish-english) link to parse translation results. You can just pass the word as a parameter to translate.
 
 # Installation
 
 You can easily start using the CLI by installing it as a package on your Python environment.
 
-```
+```bash
 pip install .
 ```
 
 Or you can install it by using the command below
 
-```
+```bash
 pip install git+https://github.com/BaysanSoft/Tureng-Translation-CLI.git
 ```
 
@@ -38,7 +37,7 @@ If you want to use it from bash, you can just move [tureng-cli.sh](tureng-cli.sh
 
 **!With this kind of installation, you can use `translate` command for default.**
 
-```
+```bash
 >>> sudo mv tureng-cli.sh /usr/sbin/
 >>> turenh-cli.sh "hurricane"
 
@@ -65,7 +64,7 @@ Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 
 [tureng.sh](tureng.sh) file helps us to execute commands from Bash.
 
-Syntax: 
+Syntax:
 
 `tureng.sh {command} "{word}" {n_result: default 15}`
 
@@ -73,7 +72,7 @@ Example of usage:
 
 `tureng.sh synonym "hurricane" 15`
 
-```
+```bash
 >>> sudo mv tureng.sh /usr/sbin/
 >>> tureng.sh synonym "hurricane" 2
 
@@ -84,7 +83,6 @@ Hurricane synonyms
 
 ```
 
-
 # Usage
 
 ## translate
@@ -92,12 +90,13 @@ Hurricane synonyms
 This command is using for translating words.
 
 There are basically 2 parameters by using the CLI:
+
 - `-w` or `--word` for words to translate in both language Turkish or English
 - `-n` or `--n-results` to limit the result of the translation rows
 
 The example below is for Turkish -> English.
 
-```
+```bash
 >>> tureng-cli translate -w Kasırga -n 10
 
 Meanings of "kasırga" in English Turkish Dictionary : 33 result(s)
@@ -115,9 +114,9 @@ Meanings of "kasırga" in English Turkish Dictionary : 33 result(s)
 
 ```
 
-
 The example below is for English -> Turkish.
-```
+
+```bash
 >>> tureng-cli translate -w Hurricane -n 10
 
 Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
@@ -140,10 +139,11 @@ Meanings of "hurricane" in Turkish English Dictionary : 15 result(s)
 This command is using for showing sentence examples.
 
 There are basically 2 parameters by using the CLI:
+
 - `-w` or `--word` for words to get the related sentences with it
 - `-n` or `--n-results` to limit the result of the translation rows
 
-```
+```bash
 >>> tureng-cli sentence -w "Hurricane" -n 10
 
 Hurricane sentence example
@@ -161,16 +161,16 @@ Hurricane sentence example
 
 ```
 
-
 ## synonym
 
 This command is using for showing synonyms of the word.
 
 There are basically 2 parameters by using the CLI:
+
 - `-w` or `--word` for words to get related synonyms
 - `-n` or `--n-results` to limit the result of the translation rows
 
-```
+```bash
 >>> tureng-cli synonym -w "Hurricane" -n 3
 
 Hurricane synonyms
@@ -183,7 +183,7 @@ Hurricane synonyms
 
 ## Error Handling
 
-```
+```bash
 >>> tureng-cli translate -w "excissment" -n 10
 
 Maybe the correct one is
@@ -203,7 +203,7 @@ excitant
 
 You can use `--help` flag to get help.
 
-```
+```bash
 >>> tureng-cli --help
 
 Usage: cli.py [OPTIONS] COMMAND [ARGS]...
@@ -217,8 +217,7 @@ Commands:
 
 Or you can get help for specific commands.
 
-
-```
+```bash
 >>> tureng-cli translate --help
 
 Usage: cli.py translate [OPTIONS]

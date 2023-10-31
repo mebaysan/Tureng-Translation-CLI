@@ -13,18 +13,17 @@ setup(
     name="tureng-cli",
     URL="https://github.com/mebaysan/Tureng-Translation-CLI",
     version="1.0.0",
-    long_descp_content="text/markdown",
-    long_descp=README,
+    long_description_content_type="text/markdown",
+    long_description=README,
     packages=find_packages(include=["tureng_cli", "tureng_cli.*"]),
     install_requires=["beautifulsoup4", "click", "requests"],
     python_requires=">=3.8",
-    classifiers=(
+    classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-    ),
+    ],
     keywords="mebaysan translation Turkish English Tureng CLI",
-    zip_safe=False,
     license="MIT",
     entry_points={"console_scripts": ["tureng-cli=tureng_cli.__main__:main"]},
 )
