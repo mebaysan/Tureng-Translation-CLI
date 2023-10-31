@@ -15,6 +15,8 @@ I created this repo to easily translate English and Turkish words by using very 
 
 This CLI basically scrapes [https://tureng.com/en/turkish-english](https://tureng.com/en/turkish-english) link to parse translation results. You can just pass the word as a parameter to translate.
 
+You can access the package on PyPi, [bs-tureng-cli](https://pypi.org/project/bs-tureng-cli/).
+
 # Installation
 
 You can easily start using the CLI by installing it as a package on your Python environment.
