@@ -29,6 +29,12 @@ Or you can install it by using the command below
 pip install git+https://github.com/BaysanSoft/Tureng-Translation-CLI.git
 ```
 
+Or you can install by using `pip`
+
+```bash
+pip install bs-tureng-cli
+```
+
 Or you can just use `sudo make install`.
 
 ## Install As a Bash Script
