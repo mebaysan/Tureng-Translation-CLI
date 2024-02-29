@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# You should change `tureng-cli` with `python -m tureng_cli` to use by installing as a Python package;
+# `pip install bs-tureng-cli` or `pip install git+https://github.com/BaysanSoft/Tureng-Translation-CLI.git`
+
 N_RESULT=15
 
 if [[ -n $3 ]]; then
